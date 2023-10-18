@@ -29,7 +29,7 @@
 	>
 		<Icon size={50} name="edit" /> Edit this page on GitHub
 	</a>
-
+	
 	<DocsOnThisPage details={data.page} />
 
 	{@html data.page.content}
@@ -97,4 +97,11 @@
 	.controls span.faded {
 		opacity: 0.4;
 	}
+	
+	@media (min-width: 1200px) {
+		:global(aside.on-this-page) {
+			z-index: -1 !important;
+		}
+	}
+	
 </style>
